@@ -263,4 +263,5 @@ PORT=3000
 
 ## YouTube Video
 
-> Add the project demonstration video link here.
+[> Add the project demonstration video link here.](https://youtu.be/jOhR9SFdYR0)
+
