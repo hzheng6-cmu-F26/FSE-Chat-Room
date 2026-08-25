@@ -1,0 +1,30 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "A simple real-time chat room built with Express, SQLite and Socket.IO",
+  "main": "server/app.js",
+  "scripts": {
+    "test": "node --check server/app.js && node --check server/db.js && node --check client/scripts/login.js && node --check client/scripts/main.js && node --test test/api.test.js",
+    "start": "node server/app.js",
+    "dev": "nodemon --legacy-watch server/app.js",
+    "submission": "zip -r -FS FSE-Chat-Room-submission.zip client server test .env.example .gitignore MYPROMPTS.md README.md package.json package-lock.json -x 'node_modules/*' '.env' '.vscode/*' 'server/models/chat.db*' '*/.DS_Store' '__MACOSX/*' 'FSE-Chat-Room-submission.zip'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "better-sqlite3": "11.10.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.6.2",
+    "jsonwebtoken": "^9.0.3",
+    "socket.io": "^4.8.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

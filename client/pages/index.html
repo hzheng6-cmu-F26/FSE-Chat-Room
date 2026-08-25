@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSE Chat Room</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <main class="loginScreen">
+        <form id="loginForm" class="loginForm">
+            <h1>FSE Chat Room</h1>
+
+            <div class="formStyle">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text" maxlength="30" required>
+            </div>
+
+            <div class="formStyle">
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" maxlength="72" required>
+            </div>
+
+            <div class="buttonStyle">
+                <button type="submit">Login</button>
+                <button id="registerBtn" type="button">Register</button>
+            </div>
+
+            <p id="authMsg"></p>
+        </form>
+    </main>
+    <script src="/scripts/login.js"></script>
+</body>
+</html>

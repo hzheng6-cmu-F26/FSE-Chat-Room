@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        >
+        <title>FSE Chat Room</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    
+    <body class="chatBody">
+        <div class="mainBox">
+
+        <!-- Top bar-->
+        <div class="topBar">
+            <h1>FSE Chat Room</h1>
+            <a class="logoutBtn" href="/">Logout</a>
+        </div>
+
+        <!-- Messages -->
+        <button id="loadOlderBtn" class="loadOlderBtn" type="button" hidden>Load older messages</button>
+        <div class="msgArea">
+        </div>
+
+        <!-- Post Form -->
+        <form id="postForm" class="formBox">
+
+            <textarea 
+                id="msgInput" 
+                name="message" 
+                placeholder="Write a message" 
+                maxlength="2000" 
+                required
+            ></textarea>
+            <div class="buttonRow">
+                <button type="submit">Post</button>
+            </div>
+
+        <p id="statusDisplay"></p>
+        </form>
+        </div>
+
+
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/scripts/main.js"></script>
+    </body>
+</html>
